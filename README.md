@@ -1,5 +1,8 @@
 # tt-bost-connes Lean 4 formalization
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20674891.svg)](https://doi.org/10.5281/zenodo.20674891)
+[![Companion paper DOI](https://img.shields.io/badge/Paper-10.5281%2Fzenodo.20674870-blue)](https://doi.org/10.5281/zenodo.20674870)
+
 Companion repository to the paper:
 
 > **Tomita–Takesaki modular theory of the Bost–Connes algebra at β = 1,
