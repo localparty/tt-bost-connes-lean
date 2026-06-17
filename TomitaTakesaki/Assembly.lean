@@ -4,7 +4,7 @@ Composes L1-L7 into the master statement of the Tomita-Takesaki modular theory
 chain for the Bost-Connes algebra over K = ℚ(i).
 
 This is the single import point for downstream consumers (RH, BSD, PvNP, QG5D).
-Importing `Integers.TomitaTakesaki.Assembly` provides:
+Importing `TomitaTakesaki.Assembly` provides:
   1. The BC C*-dynamical system (axiomatized)
   2. The GNS triple with cyclic separating vector
   3. The type III₁ factor identification
@@ -14,11 +14,11 @@ Importing `Integers.TomitaTakesaki.Assembly` provides:
   7. The spectral realization D_∞ = log(Δ₁) bridging to RH
 -/
 
-import Integers.TomitaTakesaki.L7SpectralRealization
+import TomitaTakesaki.L7SpectralRealization
 
-namespace Integers.TomitaTakesaki.Assembly
+namespace TomitaTakesaki.Assembly
 
-open Integers.TomitaTakesaki
+open TomitaTakesaki
 
 /-! ## Assembly — Full TT chain composition L1 → L7
 
@@ -108,7 +108,7 @@ noncomputable def tomita_takesaki_chain : TomitaTakesakiChainResult :=
 /-- **RH Bridge**: Extract the self-adjoint operator D_∞ = log(Δ₁) that
 discharges the RH axiom `D_infinity_spectral_encoding`.
 
-Usage: `import Integers.TomitaTakesaki.Assembly` then
+Usage: `import TomitaTakesaki.Assembly` then
   `let D := rh_bridge.D_infty` to obtain the operator. -/
 noncomputable def rh_bridge : SpectralRealizationData
     tomita_takesaki_chain.bc
@@ -131,4 +131,4 @@ noncomputable def qg5d_bridge :
       tomita_takesaki_chain.modularPair :=
   tomita_takesaki_chain.modularAut
 
-end Integers.TomitaTakesaki.Assembly
+end TomitaTakesaki.Assembly

@@ -55,7 +55,7 @@ import Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Unital
 import Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap
 import Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpow.Basic
 
-namespace Integers.TomitaTakesaki.Antilinear
+namespace TomitaTakesaki.Antilinear
 
 open scoped ComplexConjugate
 open ContinuousLinearMap
@@ -423,4 +423,4 @@ theorem polarDecomp_exists (S : E →cl[ℂ] E) (hS : S.IsClosable)
     Nonempty (PolarDecomposition E) :=
   ⟨polarDecomp S hS hWit⟩
 
-end Integers.TomitaTakesaki.Antilinear
+end TomitaTakesaki.Antilinear

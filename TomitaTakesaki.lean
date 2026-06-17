@@ -8,4 +8,4 @@
 -- composed in Assembly.lean. Importing Assembly transitively imports the
 -- entire substrate.
 
-import Integers.TomitaTakesaki.Assembly
+import TomitaTakesaki.Assembly

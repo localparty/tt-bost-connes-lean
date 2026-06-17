@@ -1,5 +1,5 @@
 name = "TtBostConnes"
-defaultTargets = ["Integers"]
+defaultTargets = ["TomitaTakesaki"]
 
 [leanOptions]
 pp.unicode.fun = true
@@ -10,4 +10,4 @@ scope = "leanprover-community"
 rev = "5e932f97dd25535344f80f9dd8da3aab83df0fe6"
 
 [[lean_lib]]
-name = "Integers"
+name = "TomitaTakesaki"

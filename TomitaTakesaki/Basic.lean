@@ -16,7 +16,7 @@ import Mathlib.Analysis.InnerProductSpace.Basic
 import Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap
 import Mathlib.Algebra.Star.SelfAdjoint
 
-namespace Integers.TomitaTakesaki
+namespace TomitaTakesaki
 
 /-! ## Core types for the Tomita-Takesaki modular theory chain
 
@@ -224,4 +224,4 @@ structure SpectralRealizationData (BC : BostConnesSystem) (gns : GNSTriple BC)
 
 end SpectralRealization
 
-end Integers.TomitaTakesaki
+end TomitaTakesaki

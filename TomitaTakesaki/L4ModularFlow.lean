@@ -24,11 +24,11 @@ Downstream consumers:
   - QG5D: modular flow on e-circle fiber
 -/
 
-import Integers.TomitaTakesaki.L3PolarDecomposition
+import TomitaTakesaki.L3PolarDecomposition
 
-namespace Integers.TomitaTakesaki.L4
+namespace TomitaTakesaki.L4
 
-open Integers.TomitaTakesaki
+open TomitaTakesaki
 
 /-! ## L4 — Modular flow theorem: σ_t = Ad(Δ^{it})
 
@@ -92,4 +92,4 @@ theorem kaplansky_extension (BC : BostConnesSystem) (gns : GNSTriple BC)
     ∀ (t : ℝ) (a : BC.Algebra),
       mag.σ t (gns.repr a) = gns.repr (BC.timeEvolution t a) := hSubstrate
 
-end Integers.TomitaTakesaki.L4
+end TomitaTakesaki.L4

@@ -14,11 +14,11 @@ encodes the arithmetic data needed by the RH chain. Once TT compiles,
 the RH axiom can be REPLACED by importing TT.
 -/
 
-import Integers.TomitaTakesaki.L6MainTheorem
+import TomitaTakesaki.L6MainTheorem
 
-namespace Integers.TomitaTakesaki.L7
+namespace TomitaTakesaki.L7
 
-open Integers.TomitaTakesaki
+open TomitaTakesaki
 
 /-! ## L7 — Spectral realization: D_∞ = log(Δ₁)
 
@@ -79,4 +79,4 @@ theorem bridges_rh_axiom (BC : BostConnesSystem) (gns : GNSTriple BC)
     ∃ (D : gns.HilbertSpace →L[ℂ] gns.HilbertSpace), IsSelfAdjoint D := by
   exact ⟨srd.D_infty, srd.is_self_adjoint⟩
 
-end Integers.TomitaTakesaki.L7
+end TomitaTakesaki.L7

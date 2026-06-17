@@ -21,15 +21,15 @@ abstract `ModularPair` level (bare functions). This file provides the concrete
 realization grounded in the Tomita S construction.
 -/
 
-import Integers.TomitaTakesaki.L2GNSCyclicSeparating
-import Integers.TomitaTakesaki.Antilinear
+import TomitaTakesaki.L2GNSCyclicSeparating
+import TomitaTakesaki.Antilinear
 import Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Unital
 import Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
-namespace Integers.TomitaTakesaki.TomitaS
+namespace TomitaTakesaki.TomitaS
 
-open Integers.TomitaTakesaki
+open TomitaTakesaki
 
 /-! ## GNS representation (left multiplication on the quotient) -/
 
@@ -80,7 +80,7 @@ Antilinear, closable, densely-defined:
   S(π(a)Ω₁) := π(a*)Ω₁                    on the dense domain π(B_K)Ω₁
 
 Wrapped around a project-local `Antilinear.ConjugateLinearMap`
-(`Integers.TomitaTakesaki.Antilinear`), which provides a real
+(`TomitaTakesaki.Antilinear`), which provides a real
 antilinearity-respecting type with composition rules. -/
 structure TomitaSOperator (BC : BostConnesSystem) where
   /-- The underlying conjugate-linear map `S : H_{ω₁} → H_{ω₁}`. -/
@@ -201,4 +201,4 @@ noncomputable def modularHamiltonian (BC : BostConnesSystem) :
     L2.GNSHilbert BC →L[ℂ] L2.GNSHilbert BC :=
   (modularData BC).delta  -- scaffold: Δ itself (refines to cfc Real.log Δ)
 
-end Integers.TomitaTakesaki.TomitaS
+end TomitaTakesaki.TomitaS

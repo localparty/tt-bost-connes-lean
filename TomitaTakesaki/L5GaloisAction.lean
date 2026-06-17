@@ -10,11 +10,11 @@ Face: RESONANCE
 Depends on: L3 (modular conjugation J on Hecke basis)
 -/
 
-import Integers.TomitaTakesaki.L4ModularFlow
+import TomitaTakesaki.L4ModularFlow
 
-namespace Integers.TomitaTakesaki.L5
+namespace TomitaTakesaki.L5
 
-open Integers.TomitaTakesaki
+open TomitaTakesaki
 
 /-! ## L5 — Galois action on B_K for K = ℚ(i)
 
@@ -65,4 +65,4 @@ theorem j_intertwines_galois (BC : BostConnesSystem) (gns : GNSTriple BC)
     True := by
   trivial
 
-end Integers.TomitaTakesaki.L5
+end TomitaTakesaki.L5

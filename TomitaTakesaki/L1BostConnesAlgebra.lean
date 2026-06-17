@@ -10,11 +10,11 @@ Face: RESONANCE
 Option B: AXIOMATIZED — deepest substrate, cited not rederived.
 -/
 
-import Integers.TomitaTakesaki.Basic
+import TomitaTakesaki.Basic
 
-namespace Integers.TomitaTakesaki.L1
+namespace TomitaTakesaki.L1
 
-open Integers.TomitaTakesaki
+open TomitaTakesaki
 
 /-! ## L1 — Bost-Connes algebra B_K with canonical KMS₁ state
 
@@ -55,4 +55,4 @@ axiom kms_condition (BC : BostConnesSystem) :
       F 0 = BC.kms1State (BC.mul a (BC.timeEvolution 0 b)) ∧
       F 1 = BC.kms1State (BC.mul (BC.timeEvolution 0 b) a)
 
-end Integers.TomitaTakesaki.L1
+end TomitaTakesaki.L1

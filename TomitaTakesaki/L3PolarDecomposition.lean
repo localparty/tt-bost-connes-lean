@@ -11,11 +11,11 @@ Face: DYNAMICS
 Depends on: L2 (separating-ness of Ω₁)
 -/
 
-import Integers.TomitaTakesaki.L2GNSCyclicSeparating
+import TomitaTakesaki.L2GNSCyclicSeparating
 
-namespace Integers.TomitaTakesaki.L3
+namespace TomitaTakesaki.L3
 
-open Integers.TomitaTakesaki
+open TomitaTakesaki
 
 /-! ## L3 — Polar decomposition S̄ = JΔ^{1/2}, Δ = e^{-K₁}
 
@@ -82,4 +82,4 @@ theorem j_hecke_action (BC : BostConnesSystem) (gns : GNSTriple BC)
     True := by
   trivial
 
-end Integers.TomitaTakesaki.L3
+end TomitaTakesaki.L3

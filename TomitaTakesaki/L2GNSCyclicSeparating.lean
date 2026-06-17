@@ -11,13 +11,13 @@ Face: RESONANCE
 Depends on: L1
 -/
 
-import Integers.TomitaTakesaki.L1BostConnesAlgebra
+import TomitaTakesaki.L1BostConnesAlgebra
 import Mathlib.Analysis.InnerProductSpace.Completion
 import Mathlib.LinearAlgebra.Quotient.Basic
 
-namespace Integers.TomitaTakesaki.L2
+namespace TomitaTakesaki.L2
 
-open Integers.TomitaTakesaki
+open TomitaTakesaki
 
 /-! ## L2 — GNS triple, cyclic separating Ω₁, type III₁ factor
 
@@ -160,4 +160,4 @@ theorem type_iii1_factor (BC : BostConnesSystem) (gns : GNSTriple BC) :
     TypeIII1FactorWitness BC gns := by
   exact ⟨trivial, trivial, trivial, trivial, trivial⟩
 
-end Integers.TomitaTakesaki.L2
+end TomitaTakesaki.L2

@@ -10,11 +10,11 @@ Face: RESONANCE
 Depends on: L2 (type III₁), L3 (polar decomposition), L4 (modular flow), L5 (Galois)
 -/
 
-import Integers.TomitaTakesaki.L5GaloisAction
+import TomitaTakesaki.L5GaloisAction
 
-namespace Integers.TomitaTakesaki.L6
+namespace TomitaTakesaki.L6
 
-open Integers.TomitaTakesaki
+open TomitaTakesaki
 
 /-! ## L6 — Four-clause main theorem
 
@@ -75,4 +75,4 @@ theorem connes_cocycle_universality (_BC : BostConnesSystem) (_gns : GNSTriple _
     True := by
   trivial
 
-end Integers.TomitaTakesaki.L6
+end TomitaTakesaki.L6

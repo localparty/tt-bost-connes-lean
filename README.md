@@ -20,9 +20,9 @@ six documented scaffold-layer placeholders; one Lean substrate hypothesis
 ```bash
 elan default leanprover/lean4:v4.29.1
 lake update
-lake build Integers.TomitaTakesaki.Assembly      # full chain L1 → L7 + Theorem A–E
-lake build Integers.TomitaTakesaki.TomitaS       # §4.1, §4.3 (Tomita S + modular data)
-lake build Integers.TomitaTakesaki.Antilinear    # §4 antilinear-operator substrate
+lake build TomitaTakesaki.Assembly      # full chain L1 → L7 + Theorem A–E
+lake build TomitaTakesaki.TomitaS       # §4.1, §4.3 (Tomita S + modular data)
+lake build TomitaTakesaki.Antilinear    # §4 antilinear-operator substrate
 ```
 
 Toolchain: Lean 4 v4.29.1. Mathlib pinned at
@@ -32,7 +32,7 @@ Toolchain: Lean 4 v4.29.1. Mathlib pinned at
 
 | Module | Paper §  | Content |
 |---|---|---|
-| `Integers/TomitaTakesaki/Basic.lean` | §§2–7 typing | Core types: `BostConnesSystem`, `GNSTriple`, `TypeIII1FactorWitness`, `ModularPair`, etc. |
+| `TomitaTakesaki/Basic.lean` | §§2–7 typing | Core types: `BostConnesSystem`, `GNSTriple`, `TypeIII1FactorWitness`, `ModularPair`, etc. |
 | `L1BostConnesAlgebra.lean` | §§2.1–2.4 | Bost–Connes system with KMS₁ state, ITPFI factorization, KMS condition |
 | `L2GNSCyclicSeparating.lean` | §3 | GNS triple, cyclic separating Ω₁, type III₁ factor identification |
 | `L3PolarDecomposition.lean` | §4.3 | Polar decomposition S̄ = J · Δ^{1/2} |
@@ -48,11 +48,11 @@ Toolchain: Lean 4 v4.29.1. Mathlib pinned at
 
 ```bash
 # zero code-level sorries:
-grep -rE "^[[:space:]]*sorry|:= sorry" Integers/TomitaTakesaki/*.lean
+grep -rE "^[[:space:]]*sorry|:= sorry" TomitaTakesaki/*.lean
 # → no output
 
 # eight named axioms:
-grep -hE "^axiom " Integers/TomitaTakesaki/*.lean | wc -l
+grep -hE "^axiom " TomitaTakesaki/*.lean | wc -l
 # → 8
 ```
 
