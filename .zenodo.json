@@ -1,0 +1,47 @@
+{
+  "title": "Tomita–Takesaki modular theory of the Bost–Connes algebra at β = 1, Lean 4 formalization",
+  "description": "<p>Lean 4 formalization companion to the math.OA submission. This repository implements the structural chain for Theorems A–E of the paper \"Tomita–Takesaki modular theory of the Bost–Connes algebra at β = 1, formalized in Lean 4\" (companion paper DOI: 10.5281/zenodo.20674870).</p><p>Mathlib pinned at SHA 5e932f97 (v4.29.1). The chain L1 → L7 + Theorem A–E is verified with zero <code>sorry</code> count and eight named programme-level axioms (six carrying documented literature citations, two recording Mathlib infrastructure gaps with documented discharge paths). Six scaffold-layer placeholders and one Lean substrate hypothesis (<code>hSubstrate_iii</code> for Theorem C) are inventoried in §§8.2–8.3 of the paper.</p><p>Substrate: a 230-line file <code>Antilinear.lean</code> develops polar decomposition for unbounded antilinear operators (current Mathlib gap), proposed for upstream contribution.</p><p>v0.2 release: namespace + directory rename — <code>Integers.TomitaTakesaki.*</code> → <code>TomitaTakesaki.*</code>; AI-collaboration disclosure added per artifact-level discipline.</p><p>During the preparation of this work, the author used Claude Opus 4.7.</p>",
+  "creators": [
+    {
+      "name": "Six, G",
+      "affiliation": "San Francisco, CA, USA"
+    }
+  ],
+  "upload_type": "software",
+  "license": "CC-BY-4.0",
+  "version": "v0.2",
+  "keywords": [
+    "Tomita-Takesaki theory",
+    "Bost-Connes algebra",
+    "KMS states",
+    "type III₁ factor",
+    "ITPFI factorization",
+    "modular automorphism group",
+    "Lean 4 formalization",
+    "Mathlib",
+    "Antilinear polar decomposition",
+    "operator algebras"
+  ],
+  "communities": [
+    {"identifier": "math"}
+  ],
+  "subjects": [
+    {"term": "46L36 (Classification of factors)", "scheme": "msc-2020"},
+    {"term": "46L60 (Applications of selfadjoint operator algebras to physics)", "scheme": "msc-2020"},
+    {"term": "82B10 (Quantum statistical mechanics, general)", "scheme": "msc-2020"},
+    {"term": "68V20 (Formal mathematics)", "scheme": "msc-2020"}
+  ],
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "relation": "isNewVersionOf",
+      "identifier": "10.5281/zenodo.20674891",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5281/zenodo.20674870",
+      "scheme": "doi"
+    }
+  ]
+}

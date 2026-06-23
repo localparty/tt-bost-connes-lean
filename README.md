@@ -71,3 +71,5 @@ Extracted from `integers-mathlib-blueprint-tt-impl` at commit `1ca33cb`
 substrate, including Phase 7 RH-bridge files (`Galerkin.lean`,
 `RHWitness.lean`), is maintained at the programme's blueprint repository.
 This extraction is the canonical state cited in Appendix A of the paper.
+
+During the preparation of this work, the author used Claude Opus 4.7. The author reviewed all content and takes full responsibility for the formalization.
